@@ -1,5 +1,6 @@
     package com.example.chattingapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,7 +11,8 @@ import android.view.View
         setContentView(R.layout.activity_login)
     }
     fun loginCreateUserBtnClicked(view: View){
-
+        val createUserIntent = Intent(this, CreateUserActivity::class.java)
+        startActivity(createUserIntent)
     }
     fun loginLoginBtnClicked(view: View){
 
